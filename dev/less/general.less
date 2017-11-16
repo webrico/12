@@ -9,14 +9,32 @@
 .wrap{
 	margin: 0 auto;
 	max-width: 1170px;
+	padding-left: 15px;
+	@media screen and (max-width: @full-width) {
+		max-width: @full-width;
+	}
+	@media screen and (max-width: @tablet-width) {
+		max-width: @tablet-width;
+	}
+	@media screen and (max-width: @phone-width) {
+		max-width: @phone-width;
+	}
+	@media screen and (max-width: @xs-width) {
+		max-width: @xs-width;
+	}
 }
 
 .block_top{
 	height: 1080px;
 	background: url(../img/image.png) no-repeat 47vw 20px, url(../img/BELHARD.png) no-repeat 25.5% 276px, linear-gradient(45deg, #00638e 0%, #459cec 100%);
+	@media screen and (max-width: @tablet-width) {
+		background: url(../img/image.png) no-repeat 70vw 20px, linear-gradient(45deg, #00638e 0%, #459cec 100%);
+	}
 }
 
 
 
 @import 'import/header';
 @import 'import/about';
+@import 'import/main';
+@import 'import/footer';

@@ -4,12 +4,27 @@
 		width: 50%;
 		color: #fff;
 		font-family: @robotoL;
+		@media screen and (max-width: @full-width) {
+			width: 55%;
+		}
+		@media screen and (max-width: @tablet-width) {
+			width: 90%;
+		}
 		h2{
 			font-family: @nerisB;
 			font-size: 7.5rem;
 			text-transform: uppercase;
 			margin-left: -7px;
 			margin-bottom: 65px;
+			@media screen and (max-width: @full-width) {
+				margin-bottom: 40px;
+			}
+			@media screen and (max-width: @tablet-width) {
+				font-size: 5rem;
+			}
+			@media screen and (max-width: @tablet-width) {
+				font-size: 4rem;
+			}
 		}
 		p{
 			line-height: 1.375rem;
@@ -27,6 +42,9 @@
 			text-transform: uppercase;
 			font-family: @robotoL;
 			font-size: 1.125rem;
+			@media screen and (max-width: @full-width) {
+				margin-top: 30px;
+			}
 		}
 	}
 }
